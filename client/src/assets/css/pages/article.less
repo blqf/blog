@@ -1,0 +1,38 @@
+.article{
+  display: flex;
+  .left-menu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: #fff;
+    margin-left: 2px;
+    overflow: auto;
+    .menu-list{
+      margin: 50px 0 0;
+      border: 2px solid #0af;
+      li{
+        box-sizing: border-box;
+        height: 45px;
+        padding-left: 40px;
+        cursor: pointer;
+        line-height: 45px;
+        color: #0ff;
+        user-select: none;
+      }
+      li.active{
+        background-color: rgba(36, 121, 204, .5);
+        transition: background-color 200ms 0s linear;
+      }
+      li:hover{
+        color: #ff0;
+      }
+    }
+  }
+  .right-content{
+    width: 50%;
+    color: #fff;
+    margin-left: 350px;
+  }
+}
